@@ -18,6 +18,6 @@ public class UserService {
     public String create(@RequestBody UserDto userDto) {
         User user = userDto.toEntity(passwordEncoder.encode(userDto.getPassword()));
         userRepository.save(user);
-        return "User registered successfully!!^_^";
+        return "User registered successfully!!^__^";
     }
 }
